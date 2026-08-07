@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar colaboradores en GitHub</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --primary: #1f6feb;
+      --primary-dark: #184fb8;
+      --accent: #eaf2ff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #dfe7f5;
+      --success: #0f9d58;
+      --shadow: 0 18px 40px rgba(31, 111, 235, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #eef5ff 0%, #f8fafc 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 4vw, 3.4rem);
+      margin: 0 0 12px;
+      color: #111827;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #4d90ff);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin: 0 auto 16px;
+    }
+
+    .card-body {
+      padding: 28px 24px 24px;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      text-align: center;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card ul {
+      margin: 14px 0 0;
+      padding-left: 18px;
+    }
+
+    .card li + li {
+      margin-top: 8px;
+    }
+
+    .highlight {
+      background: #f3f8ff;
+      border-left: 4px solid var(--primary);
+      padding: 16px 18px;
+      border-radius: 12px;
+      margin-top: 18px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .note {
+      margin-top: 28px;
+      background: linear-gradient(135deg, #eaf7f0, #edf9f5);
+      border: 1px solid #cfe6d9;
+      border-radius: 18px;
+      padding: 22px 24px;
+      color: #1d4f38;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding-top: 28px;
+      }
+
+      .card-body {
+        padding: 22px 18px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge">GitHub · Colaboradores</div>
+      <h1>Cómo agregar colaboradores en GitHub</h1>
+      <p class="subtitle">
+        Sigue estos pasos para invitar a otras personas a trabajar en tu repositorio, asignar permisos y colaborar de manera organizada.
+      </p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">1</div>
+          <h2>Abre tu repositorio</h2>
+          <p>Inicia sesión en GitHub y entra al proyecto al que quieres agregar colaboradores.</p>
+          <ul>
+            <li>Haz clic en el nombre del repositorio.</li>
+            <li>Verifica que tengas permisos de propietario o administrador.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">2</div>
+          <h2>Accede a la configuración</h2>
+          <p>Dentro del repositorio, busca la pestaña de configuración.</p>
+          <ul>
+            <li>Haz clic en la pestaña <strong>Settings</strong>.</li>
+            <li>En el menú lateral, selecciona <strong>Collaborators</strong>.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">3</div>
+          <h2>Invita a la persona</h2>
+          <p>Cuando abras la sección de colaboradores, podrás enviar una invitación.</p>
+          <ul>
+            <li>Presiona <strong>Add people</strong> o <strong>Add collaborator</strong>.</li>
+            <li>Escribe el nombre de usuario, correo o el perfil de GitHub.</li>
+            <li>Selecciona a la persona correcta.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">4</div>
+          <h2>Elige el nivel de acceso</h2>
+          <p>GitHub te permite decidir qué tan muchose permisos tendrá la persona.</p>
+          <ul>
+            <li><strong>Write</strong>: puede modificar archivos y hacer commits.</li>
+            <li><strong>Read</strong>: solo puede ver el contenido.</li>
+            <li><strong>Admin</strong>: puede administrar ajustes del repositorio.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">5</div>
+          <h2>Envía la invitación</h2>
+          <p>Una vez confirmado el permiso, se enviará una solicitud de colaboración.</p>
+          <ul>
+            <li>Haz clic en <strong>Add [usuario]</strong> o <strong>Enviar invitación</strong>.</li>
+            <li>La persona recibirá una notificación para aceptar.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <div class="step-number">6</div>
+          <h2>Verifica la colaboración</h2>
+          <p>Cuando la persona acepte, podrá trabajar en el proyecto según el nivel de acceso asignado.</p>
+          <ul>
+            <li>Revisa la lista de colaboradores desde la misma sección.</li>
+            <li>Si es necesario, puedes quitar permisos o revocar acceso.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <div class="highlight">
+      Consejo: antes de invitar a alguien, asegúrate de que el usuario tenga permisos adecuados según su rol en el proyecto.
+    </div>
+
+    <div class="note">
+      <strong>Importante</strong>
+      Solo los propietarios o administradores del repositorio pueden agregar colaboradores. Si no ves la opción, revisa tu nivel de permisos.
+    </div>
+  </main>
+</body>
+</html>
