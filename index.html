@@ -146,6 +146,26 @@
       font-size: 1.05rem;
     }
 
+    .topnav {
+      margin-bottom: 24px;
+    }
+
+    .home-link {
+      display: inline-block;
+      color: var(--primary-dark);
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .home-link:hover {
+      border-bottom-color: var(--primary);
+    }
+
+    .home-link--bottom {
+      margin-top: 24px;
+    }
+
     @media (max-width: 600px) {
       .container {
         padding-top: 28px;
@@ -159,9 +179,13 @@
 </head>
 <body>
   <main class="container">
+    <nav class="topnav">
+      <a class="home-link" href="home.html">← Volver a la página de inicio</a>
+    </nav>
+
     <header class="hero">
       <div class="badge">GitHub · Colaboradores</div>
-      <h1>Cómo agregar colaboradores en GitHub</h1>
+      <h1>Cómo agregar colaboradores en GitHub con Katherine</h1>
       <p class="subtitle">
         Sigue estos pasos para invitar a otras personas a trabajar en tu repositorio, asignar permisos y colaborar de manera organizada.
       </p>
@@ -251,6 +275,8 @@
       <strong>Importante</strong>
       Solo los propietarios o administradores del repositorio pueden agregar colaboradores. Si no ves la opción, revisa tu nivel de permisos.
     </div>
+
+    <a class="home-link home-link--bottom" href="home.html">← Volver a la página de inicio</a>
   </main>
 </body>
 </html>
